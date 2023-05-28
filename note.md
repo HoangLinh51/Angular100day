@@ -98,3 +98,7 @@
 [style]="object" --- <h1 [style]="{color: 'yellow', backgroundColor: 'black'}">{{title}}</h1>
 [style.css-variable] --- <h1 [style.--text-color]="isDanger ? 'red' : 'blue'" [style]="{color:'var(--text-color)'}">{{title}}</h1>
 <------------END------------>
+
+\*\*\*day 7: Component and Input Biding
+*khi tạo component có thể tái sử dụng lại
+*Input Biding:

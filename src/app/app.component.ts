@@ -9,12 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular100day';
 
-  isDanger = false;
-  isWarning = false;
-
-  handler(event: any) {
-    console.log('Clicked', event);
-  }
+  currentProgress = 70;
 }
 // users = [
 //   {

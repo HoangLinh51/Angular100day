@@ -1,17 +1,9 @@
-<!--/// DAY 6 -->
-<h1 style="color: red;">{{title}}</h1>
-<h1 [style.background-color]="'green'">{{title}}</h1>
-<h1 [style.fontSize.rem]="4">{{title}}</h1>
-<h1 [style]="{color: 'yellow', backgroundColor: 'black'}">{{title}}</h1>
-<h1 [style.--text-color]="isDanger ? 'red' : 'blue'" [style]="{color:'var(--text-color)'}">{{title}}</h1>
-
-
-
-<button (click)="isDanger = !isDanger">Danger</button>
+<h1>{{title}}</h1>
+<button (click)="currentProgress = currentProgress + 1" >Increase Progress</button>
+<button (click)="currentProgress = currentProgress - 1" >Reduce Progress</button>
+<progress-bar></progress-bar>
 <br>
-<button (click)="isWarning = !isWarning">Warning</button>
-
-<div class="" [class.red-border]="isDanger" [class.green-background]="isWarning" div>
+<progress-bar [progress]="currentProgress" [progressColor]="'blue'"></progress-bar>
 
 
 
@@ -65,3 +57,16 @@ Age: {{user.age}}
 </ul>
 
 <button *ngFor="let tag of tag; last as isLast" [class.right-magin]="!isLast">{{tag}}</button> -->
+
+<!-- /// DAY 6 -->
+<!-- <h1 style="color: red;">{{title}}</h1>
+<h1 [style.background-color]="'green'">{{title}}</h1>
+<h1 [style.fontSize.rem]="4">{{title}}</h1>
+<h1 [style]="{color: 'yellow', backgroundColor: 'black'}">{{title}}</h1>
+<h1 [style.--text-color]="isDanger ? 'red' : 'blue'" [style]="{color:'var(--text-color)'}">{{title}}</h1>
+
+<button (click)="isDanger = !isDanger">Danger</button>
+<br>
+<button (click)="isWarning = !isWarning">Warning</button>
+
+<div class="" [class.red-border]="isDanger" [class.green-background]="isWarning" div> -->
