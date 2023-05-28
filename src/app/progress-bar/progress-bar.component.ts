@@ -32,7 +32,7 @@ import {
 export class ProgressBarComponent implements OnInit, OnChanges {
   @Input() progress = 50;
   @Input() backgroundColor = '#ccc';
-  @Input() progressColor = 'tomato';
+  @Input() progressColor = 'yellow';
 
   constructor() {
     console.log({

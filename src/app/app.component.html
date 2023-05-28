@@ -1,13 +1,6 @@
 <h1>{{title}}</h1>
-<button (click)="currentProgress = currentProgress + 1" >Increase Progress</button>
-<button (click)="currentProgress = currentProgress - 1" >Reduce Progress</button>
-<progress-bar></progress-bar>
-<br>
-<progress-bar [progress]="currentProgress" [progressColor]="'blue'"></progress-bar>
 
-
-
-
+<author-list></author-list>
 <!-- ///DAY 4 -->
 
 <!-- <h1>{{title}}</h1>
@@ -70,3 +63,14 @@ Age: {{user.age}}
 <button (click)="isWarning = !isWarning">Warning</button>
 
 <div class="" [class.red-border]="isDanger" [class.green-background]="isWarning" div> -->
+
+<!-- ///DAY 7 -->
+<!-- <div>
+  <button (click)="currentProgress = currentProgress + 1">Increase Progress</button>
+  <button (click)="currentProgress = currentProgress - 1">Reduce Progress</button>
+  <progress-bar></progress-bar>
+  <br>
+  <progress-bar [progress]="redProgress" [progressColor]="'red'"></progress-bar>
+  <br>
+  <progress-bar [progress]="currentProgress" [progressColor]="'blue'"></progress-bar>
+</div> -->

@@ -102,3 +102,9 @@
 \*\*\*day 7: Component and Input Biding
 *khi tạo component có thể tái sử dụng lại
 *Input Biding:
+<------------END------------>
+
+\*\*\*day8: Output biding
+
+- nếu như Input Biding (Data Down) là hiểu như parent component tương tác với child component
+- thì Output Biding & Event Biding (Event Up) là child component tương tác với parent component

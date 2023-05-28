@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'Angular100day';
 
   currentProgress = 70;
+  redProgress = 60;
 }
 // users = [
 //   {
