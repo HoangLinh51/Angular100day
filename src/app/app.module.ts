@@ -7,7 +7,7 @@ import { HelloComponent } from './hello.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AuthorListComponent } from './authors/author-list.component';
 import { AuthorDetailsComponent } from './authors/author-details.component';
-import { ToggleComponent } from './toggle.component';
+import { ToggleComponent } from './toggel/toggle.component';
 
 @NgModule({
   declarations: [

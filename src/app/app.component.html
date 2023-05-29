@@ -1,12 +1,15 @@
 <p>Your name: {{ title }}</p>
+
+<input type="text" [ngModel]="title" (ngModelChange) ="title= $event" />
 <br>
-<input type="text" [ngModel]="title" (ngModelChange)="title= $event" />
-<br>
-<toggle [checked]="checked"></toggle>
+<!-- toggleComp la instance cua toggleComponent -->
+<toggle  [(checked)]="isChecked"></toggle>
+
+<!-- <button (click)="toggleComp.toggle()">Click me</button> -->
+
 <!-- ///DAY 4 -->
 
 <!-- <h1>{{title}}</h1>
-
 <hello *ngIf="user.age >= 15;else under15" [name]="user.name"></hello>
 
 <ng-template #under15>
@@ -79,3 +82,18 @@ Age: {{user.age}}
 
 <!-- ///DAY 8 -->
 <!-- <author-list></author-list> -->
+
+<!-- ///DAY 9 -->
+<!-- <input type="text" [ngModel]="title" (ngModelChange)="title= $event" />
+<br>
+<toggle [checked]="checked"></toggle> -->
+
+<!-- ///DAY 10 -->
+<!-- toggleComp là template variable
+angular biết được khi bạn đặt cái template variable lên 1 DOM element thì angular sẽ tham chíu tới elemet đáy trên cái Dom của mình nó đc gọi là HTMLButtonElement
+ViewChild là tham chiếu Child trên View(dễ hiểu hơn là view đứa con của app.component.html)
+có 2 cách truyền cái gì đó vào @ViewChild:
+-string: string phải mach với template variable để nó tham chiếu tới toggleComponent.
+-truyền thẳng vào class(token)
+nếu mình muốn có tham chiếu tới ToggleComponent bên trong ngOnInit ko phải ngAfterViewInit(có sớm hơn một chút ) thì ViewChild có hổ trợ biến thứ 2 gọi là Option
+-->

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ToggleComponent } from './toggel/toggle.component';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  @ViewChild(ToggleComponent, { static: true }) toggleComp!: ToggleComponent;
+
   title = 'Angular100day';
-  checked: any;
+  isChecked = true;
+
+  ngOnInit() {
+    console.log('OnInit', this.toggleComp);
+  }
+  ngAfterViewInit() {
+    console.log(this.toggleComp);
+  }
 }
 // users = [
 //   {

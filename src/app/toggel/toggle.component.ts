@@ -66,7 +66,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   ],
 })
 export class ToggleComponent implements OnInit {
-  @Input() checked = false;
+  @Input() checked = true;
   @Output() checkedChange = new EventEmitter<boolean>();
 
   constructor() {}
@@ -75,6 +75,6 @@ export class ToggleComponent implements OnInit {
 
   toggle() {
     this.checked = !this.checked;
-    this.checkedChange.emit(this.checked);
+    this.checkedChange.emit(!this.checked);
   }
 }
