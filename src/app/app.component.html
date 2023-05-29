@@ -1,6 +1,8 @@
-<h1>{{title}}</h1>
-
-<author-list></author-list>
+<p>Your name: {{ title }}</p>
+<br>
+<input type="text" [ngModel]="title" (ngModelChange)="title= $event" />
+<br>
+<toggle [checked]="checked"></toggle>
 <!-- ///DAY 4 -->
 
 <!-- <h1>{{title}}</h1>
@@ -74,3 +76,6 @@ Age: {{user.age}}
   <br>
   <progress-bar [progress]="currentProgress" [progressColor]="'blue'"></progress-bar>
 </div> -->
+
+<!-- ///DAY 8 -->
+<!-- <author-list></author-list> -->

@@ -2,15 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  // template: 'Hello World',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'Angular100day';
-
-  currentProgress = 70;
-  redProgress = 60;
+  checked: any;
 }
 // users = [
 //   {

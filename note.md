@@ -108,3 +108,6 @@
 
 - nếu như Input Biding (Data Down) là hiểu như parent component tương tác với child component
 - thì Output Biding & Event Biding (Event Up) là child component tương tác với parent component
+
+\*\*\*day 9: Two way data biding
+-2 way biding có cú pháp: [{}] (data biding là [], event biding {})

@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { AuthorListComponent } from './authors/author-list.component';
 import { AuthorDetailsComponent } from './authors/author-details.component';
+import { ToggleComponent } from './toggle.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,9 @@ import { AuthorDetailsComponent } from './authors/author-details.component';
     ProgressBarComponent,
     AuthorListComponent,
     AuthorDetailsComponent,
+    ToggleComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
