@@ -10,7 +10,14 @@ export class AppComponent {
   @ViewChild(ToggleComponent, { static: true }) toggleComp!: ToggleComponent;
 
   title = 'Angular100day';
+  questions = {
+    question1: true,
+    question2: false,
+  };
+
   isChecked = true;
+  redProgress = 60;
+  currentProgress = 70;
 
   ngOnInit() {
     console.log('OnInit', this.toggleComp);

@@ -1,0 +1,15 @@
+<header>
+  <ng-content></ng-content>
+</header>
+<div class="toggle-wrapper" [class.checked]="checked" tabindex="0" (click)="toggle()">
+  <div class="toggle"></div>
+</div>
+<div class="toogle-label">
+  <ng-content></ng-content>
+</div>
+
+<div class="toggle-content">
+  <ng-content></ng-content>
+</div>
+
+<div class="skip" *ngIf="canSkip">Skip</div>
